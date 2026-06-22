@@ -24,44 +24,44 @@ public class Game
     public static void main(String[] args)
     {
         Board board = new Board();
-        Piece blackKing = new King(Color.BLACK, "black_king.gif");
+        Piece blackKing = new King(Color.BLACK, "images/black_king.gif");
         blackKing.putSelfInGrid(board, new Location(0, 4));
-        Piece whiteKing = new King(Color.WHITE, "white_king.gif");
+        Piece whiteKing = new King(Color.WHITE, "images/white_king.gif");
         whiteKing.putSelfInGrid(board, new Location(7,4));
-        Piece blackRook1 = new Rook(Color.BLACK, "black_rook.gif");
+        Piece blackRook1 = new Rook(Color.BLACK, "images/black_rook.gif");
         blackRook1.putSelfInGrid(board, new Location(0,0));
-        Piece blackRook2 = new Rook(Color.BLACK, "black_rook.gif");
+        Piece blackRook2 = new Rook(Color.BLACK, "images/black_rook.gif");
         blackRook2.putSelfInGrid(board, new Location(0,7));
-        Piece whiteRook1 = new Rook(Color.WHITE, "white_rook.gif");
+        Piece whiteRook1 = new Rook(Color.WHITE, "images/white_rook.gif");
         whiteRook1.putSelfInGrid(board, new Location(7, 0));
-        Piece whiteRook2 = new Rook(Color.WHITE, "white_rook.gif");
+        Piece whiteRook2 = new Rook(Color.WHITE, "images/white_rook.gif");
         whiteRook2.putSelfInGrid(board, new Location(7,7));
         for (int i = 0; i < 8; i++)
         {
-            Piece whitePawn = new Pawn(Color.WHITE, "white_pawn.gif");
+            Piece whitePawn = new Pawn(Color.WHITE, "images/white_pawn.gif");
             whitePawn.putSelfInGrid(board, new Location(6, i));
-            Piece blackPawn = new Pawn(Color.BLACK, "black_pawn.gif");
+            Piece blackPawn = new Pawn(Color.BLACK, "images/black_pawn.gif");
             blackPawn.putSelfInGrid(board, new Location(1, i));
         }
-        Piece blackBishop1 = new Bishop(Color.BLACK, "black_bishop.gif");
+        Piece blackBishop1 = new Bishop(Color.BLACK, "images/black_bishop.gif");
         blackBishop1.putSelfInGrid(board, new Location(0,2));
-        Piece blackBishop2 = new Bishop(Color.BLACK, "black_bishop.gif");
+        Piece blackBishop2 = new Bishop(Color.BLACK, "images/black_bishop.gif");
         blackBishop2.putSelfInGrid(board, new Location(0,5));
-        Piece whiteBishop1 = new Bishop(Color.WHITE, "white_bishop.gif");
+        Piece whiteBishop1 = new Bishop(Color.WHITE, "images/white_bishop.gif");
         whiteBishop1.putSelfInGrid(board, new Location(7, 2));
-        Piece whiteBishop2 = new Bishop(Color.WHITE, "white_bishop.gif");
+        Piece whiteBishop2 = new Bishop(Color.WHITE, "images/white_bishop.gif");
         whiteBishop2.putSelfInGrid(board, new Location(7,5));
-        Piece blackKnight1 = new Knight(Color.BLACK, "black_knight.gif");
+        Piece blackKnight1 = new Knight(Color.BLACK, "images/black_knight.gif");
         blackKnight1.putSelfInGrid(board, new Location(0,1));
-        Piece blackKnight2 = new Knight(Color.BLACK, "black_knight.gif");
+        Piece blackKnight2 = new Knight(Color.BLACK, "images/black_knight.gif");
         blackKnight2.putSelfInGrid(board, new Location(0,6));
-        Piece whiteKnight1 = new Knight(Color.WHITE, "white_knight.gif");
+        Piece whiteKnight1 = new Knight(Color.WHITE, "images/white_knight.gif");
         whiteKnight1.putSelfInGrid(board, new Location(7, 1));
-        Piece whiteKnight2 = new Knight(Color.WHITE, "white_knight.gif");
+        Piece whiteKnight2 = new Knight(Color.WHITE, "images/white_knight.gif");
         whiteKnight2.putSelfInGrid(board, new Location(7,6));
-        Piece blackQueen = new Queen(Color.BLACK, "black_queen.gif");
+        Piece blackQueen = new Queen(Color.BLACK, "images/black_queen.gif");
         blackQueen.putSelfInGrid(board, new Location(0, 3));
-        Piece whiteQueen = new Queen(Color.WHITE, "white_queen.gif");
+        Piece whiteQueen = new Queen(Color.WHITE, "images/white_queen.gif");
         whiteQueen.putSelfInGrid(board, new Location(7,3));
         BoardDisplay display = new BoardDisplay(board);
         /*for (Move m: board.allMoves(Color.WHITE))
