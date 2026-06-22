@@ -2,6 +2,8 @@
 
 A simple Java chess implementation built for learning and experimentation. The projects includes piece and board display, player implementations (human and AI), and a Game runner.
 
+<img src="images/chess-game-demo.png" width="400">
+
 ## Requirements
 
 - Java 17 or newer
